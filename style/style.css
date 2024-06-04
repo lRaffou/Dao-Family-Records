@@ -405,6 +405,7 @@ footer h6 {
 .form {
     display: flex;
     align-items: center;
-    border-radius: 20%;
+    border-radius: 40px;
     border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
 }
