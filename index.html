@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style/style.css" />
+        <script src="JS/script.js" defer></script>
         <title>Accueil</title>
     </head>
     <body>
@@ -57,7 +58,12 @@
             </section>
             <section class="wrapper">
                 <article class="container">
-                    <input type="radio" name="slide" id="cardWrapper1" />
+                    <input
+                        class="radio"
+                        type="radio"
+                        name="slide"
+                        id="cardWrapper1"
+                    />
                     <label for="cardWrapper1" class="cardWrapper">
                         <div class="titleCardWrapper">
                             <div class="iconCardWrapper">1</div>
@@ -67,7 +73,12 @@
                             </div>
                         </div>
                     </label>
-                    <input type="radio" name="slide" id="cardWrapper2" />
+                    <input
+                        class="radio"
+                        type="radio"
+                        name="slide"
+                        id="cardWrapper2"
+                    />
                     <label for="cardWrapper2" class="cardWrapper">
                         <div class="titleCardWrapper">
                             <div class="iconCardWrapper">1</div>
@@ -78,6 +89,7 @@
                         </div>
                     </label>
                     <input
+                        class="radio"
                         type="radio"
                         name="slide"
                         id="cardWrapper3"
@@ -92,7 +104,12 @@
                             </div>
                         </div>
                     </label>
-                    <input type="radio" name="slide" id="cardWrapper4" />
+                    <input
+                        class="radio"
+                        type="radio"
+                        name="slide"
+                        id="cardWrapper4"
+                    />
                     <label for="cardWrapper4" class="cardWrapper">
                         <div class="titleCardWrapper">
                             <div class="iconCardWrapper">1</div>
@@ -102,7 +119,12 @@
                             </div>
                         </div>
                     </label>
-                    <input type="radio" name="slide" id="cardWrapper5" />
+                    <input
+                        class="radio"
+                        type="radio"
+                        name="slide"
+                        id="cardWrapper5"
+                    />
                     <label for="cardWrapper5" class="cardWrapper">
                         <div class="titleCardWrapper">
                             <div class="iconCardWrapper">1</div>
@@ -220,7 +242,58 @@
             </section> -->
         </main>
         <footer>
-
+            <section class="footer">
+                <article class="partenaires">
+                    <h3>Nos Partenaires</h3>
+                    <p>Dao Brothers</p>
+                    <p>Yo Production</p>
+                    <p>ElectroMag</p>
+                </article>
+                <article class="logoFooter">
+                    <img src="img/1logo_dfr_blanc_complet.png" alt="" />
+                </article>
+                <section class="news">
+                    <article>
+                        <h3>Suivez-nous</h3>
+                        <div class="imgFollow">
+                            <img src="img/icons8-youtube-256.png" alt="" />
+                            <img
+                                src="img/new-Instagram-icon-white-png.png"
+                                alt=""
+                            />
+                            <img src="img/Sans titre-1.png" alt="" />
+                            <img
+                                src="img/34cfaad0-1682-40e5-af64-414625a9e796.png"
+                                alt=""
+                            />
+                        </div>
+                    </article>
+                    <article>
+                        <h3>Newsletters</h3>
+                        <form action="" class="form">
+                            <label for="email"></label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="nom@mail.com"
+                                minlength="30"
+                            />
+                            <input
+                                class="button"
+                                type="image"
+                                src="/img/Design sans titre.png"
+                                value="Envoyer"
+                                onclick="send()"
+                            />
+                        </form>
+                    </article>
+                </section>
+            </section>
+            <h6>
+                Copyright &copy; - <span id="year"></span> Tous droits
+                réservés Mentions légales
+            </h6>
         </footer>
     </body>
 </html>

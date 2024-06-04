@@ -165,7 +165,7 @@ nav {
     text-shadow: rgb(0, 0, 0) 1px 0 10px;
     font-size: 195%;
 }
-input {
+.radio {
     display: none;
 }
 input:checked + label {
@@ -344,7 +344,67 @@ input:checked + label .descriptionCardWrapper {
 
 /* ------------------------------------Start-footer-définitif------------------------------------*/
 footer {
-    background-color: bisque;
-    height: 60vh;
+    /* background-color: bisque; */
     margin-top: 4vh;
+    /* width: 100%; */
+    height: 60vh;
+    align-content: center;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+}
+.partenaires {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    font-size: 1.5vw;
+}
+.partenaires h3 {
+    font-size: 2vw;
+}
+.logoFooter {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+}
+.news {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    font-size: 2vw;
+    gap: 10vh;
+    text-align: center;
+}
+.imgFollow {
+    display: flex;
+    gap: 3vw;
+    margin-top: 3vh;
+}
+footer div img {
+    width: 3vw;
+}
+footer h6 {
+    text-align: end;
+    letter-spacing: 0.2vw;
+}
+#email {
+    text-align: center;
+    border: none;
+    background: transparent;
+    font-size: 1.3vw;
+}
+#email:focus {
+    outline: none;
+}
+.form {
+    display: flex;
+    align-items: center;
+    border-radius: 20%;
+    border-bottom: 2px solid #fff;
 }
