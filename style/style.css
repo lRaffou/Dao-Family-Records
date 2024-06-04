@@ -43,7 +43,7 @@ nav {
 }
 .menuNav ul li a {
     text-decoration: none;
-    font-size: x-large;
+    font-size: 1.5vw;
     color: #fff;
 }
 .divLogoNav {
@@ -54,7 +54,7 @@ nav {
 .logoNav {
     scale: 2;
     padding-top: 1em;
-    height: 3rem;
+    height: 2.6vw;
 }
 .nameNav {
     /* background-color: #b7b7b7; */
@@ -68,10 +68,13 @@ nav {
     width: 90%;
     font-family: "Montserrat-Bold";
     text-transform: uppercase;
-    font-size: xx-large;
+    font-size: 2vw;
 }
 .iconCo {
     display: flex;
+}
+.iconCo img {
+    width: 2vw;
 }
 /* ------------------------------------End-NavBar-définitive------------------------------------*/
 .video {
@@ -115,7 +118,7 @@ nav {
     border-radius: 2rem;
     display: flex;
     align-items: flex-end;
-    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
     box-shadow: 0px 0px 30px -5px #ffffffff;
     overflow: hidden;
     margin: 0 10px;
@@ -148,8 +151,8 @@ nav {
     width: 520px;
     opacity: 0;
     transform: translateY(30px);
-    transition-delay: .3s;
-    transition: all .3s ease;
+    transition-delay: 0.3s;
+    transition: all 0.3s ease;
 }
 .descriptionCardWrapper p {
     padding-top: 5px;
@@ -161,8 +164,6 @@ nav {
     text-transform: uppercase;
     text-shadow: rgb(0, 0, 0) 1px 0 10px;
     font-size: 195%;
-
-
 }
 input {
     display: none;
@@ -175,136 +176,175 @@ input:checked + label .descriptionCardWrapper {
     transform: translateY(0) !important;
 }
 .cardWrapper[for="cardWrapper1"] {
-    background-image: url('/img/Album_Red_Rave.png');
+    background-image: url("/img/Album_Red_Rave.png");
     background-position: center;
     background-repeat: no-repeat;
-    /* background-size: contain; */
-    
 }
 .cardWrapper[for="cardWrapper2"] {
-    background-image: url('/img/Darkness_fernando.png');
+    background-image: url("/img/Imagination_Fernando.png");
     background-position: center;
     background-repeat: no-repeat;
-    /* background-size: contain; */
 }
 .cardWrapper[for="cardWrapper3"] {
-    background-image: url('/img/DJ_BABE_Event.png');
+    background-image: url("/img/DJ_BABE_Event.png");
     background-position: center;
     background-repeat: no-repeat;
-    /* background-size: cover; */
 }
 .cardWrapper[for="cardWrapper4"] {
-    background-image: url('/img/Japanese_temple.png');
+    background-image: url("/img/FeelGood_DJBabe.png");
     background-position: center;
     background-repeat: no-repeat;
-
 }
 .cardWrapper[for="cardWrapper5"] {
-    background-image: url('/img/Red_Night.png');
+    background-image: url("/img/Red_Night.png");
     background-position: center;
     background-repeat: no-repeat;
-
 }
-/* .wrapper {
+/* ------------------------------------End-Wrapper-définitif------------------------------------*/
+
+/* ------------------------------------Start-Release-définitif------------------------------------*/
+.releases {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* background-color: bisque; */
+}
+.containerRelease {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
+    /* background-color: #fff; */
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #fff;
-}
-
-.container {
-    height: 400px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: start;
-    border: 1px solid #fff;
-}
-
-.card {
-    width: 80px;
-    border-radius: .75rem;
-    background-size: cover;
-    cursor: pointer;
-    overflow: hidden;
-    border-radius: 2rem;
-    margin: 0 10px;
-    display: flex;
-    align-items: flex-end;
-    transition: .6s cubic-bezier(.28,-0.03,0,.99);
-    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
-    border: 1px solid #fff;
-}
-
-.card > .row {
-    color: white;
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.card > .row > .icon {
-    background: #223;
-    color: white;
-    border-radius: 50%;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 15px;
-}
-
-.card > .row > .description {
-    display: flex;
-    justify-content: center;
     flex-direction: column;
-    overflow: hidden;
-    height: 80px;
-    width: 520px;
-    opacity: 0;
-    transform: translateY(30px);
-    transition-delay: .3s;
-    transition: all .3s ease;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
 }
-
-.description p {
-    color: #b0b0ba;
-    padding-top: 5px;
+.releases article img {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 20em;
+    border: 2px solid #fff;
 }
+.containerRelease h2 {
+    position: absolute;
+    margin-top: 36.5vw;
+}
+/* ------------------------------------End-Release-définitif------------------------------------*/
 
-.description h4 {
+/* ------------------------------------Start-Events-définitif------------------------------------*/
+.containerEvents {
+    /* background-color: #8ab5dd; */
+    width: 100%;
+    height: 140vh;
+    /* padding-top: 4.2vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.eventPrincipal {
+    /* background: bisque; */
+    width: 100%;
+    height: 60%;
+    display: flex;
+    background-image: url(/img/Design_Event.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 34.6vw;
+}
+.eventPrincipal p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    font-size: 4vw;
+    text-align: end;
+}
+.eventPrincipal img {
+    height: 100%;
+    margin-right: 2vw;
+}
+.eventNext {
+    /* background-color: chocolate; */
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.eventNext div {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 50px 0 50px;
+}
+.eventNext div:nth-child(1) {
+    background-image: url("/img/DJ_BABE_Event_2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.eventNext div:nth-child(2) {
+    background-image: url("/img/Sans\ titre-gsd1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.eventNext div:nth-child(3) {
+    background-image: url("/img/Sans\ titre-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.titleH {
+    /* background-color: darkgreen; */
+    width: 15vh;
+    transform-origin: 0 0;
+    transform: rotate(-90deg);
+    margin-top: 33vw;
+    font-size: 5vw;
+    font-family: "Montserrat-Bold";
     text-transform: uppercase;
+    letter-spacing: 1vw;
+    /* position: absolute; */
+    /* writing-mode: vertical-rl; */
+    /* text-orientation: calc(90); */
+    /* direction: ltr;
+    glyph-orientation-vertical: 90deg; */
 }
+/* ------------------------------------End-Events-définitif------------------------------------*/
 
-input {
-    display: none;
+/* ------------------------------------Start-iframe-définitif------------------------------------*/
+.spotify {
+    /* width: 90%; */
+    display: flex;
+    justify-content: center;
 }
+/* ------------------------------------End-iframe-définitif------------------------------------*/
+/* .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    /* max-width: 1440px; */
+/* height: 74px; */
+/* } */
 
-input:checked + label {
-    width: 600px;
-}
+/* .box .group { */
+/* width: 100%; */
+/* height: 100%; */
+/* background-color: #bebebeba; */
+/* border-radius: 50%/60%; */
+/* border: 1px solid; */
+/* border-color: #000000; */
+/* box-shadow: inset 0px 4px 4px #00000040; */
+/* filter: blur(4px); */
+/* }  */
 
-input:checked + label .description {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
+/* ------------------------------------Start-footer-définitif------------------------------------*/
+footer {
+    background-color: bisque;
+    height: 60vh;
+    margin-top: 4vh;
 }
-
-.card[for="c1"] {
-    background-image: url('/img/Album_Red_Rave.png');
-    background-position: center;
-}
-.card[for="c2"] {
-    background-image: url('/img/Darkness_fernando.png');
-    background-position: center;
-    b
-}
-.card[for="c3"] {
-    background-image: url('/img/DJ_BABE_Event.png');
-    background-position: center;
-}
-.card[for="c4"] {
-    background-image: url('/img/Japanese_temple.png');
-}
-.card[for="c5"] {
-    background-image: url('/img/Red_Night.png');
-} */
