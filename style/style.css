@@ -409,3 +409,24 @@ footer h6 {
     border-bottom: 2px solid #fff;
     border-right: 2px solid #fff;
 }
+/* ------------------------------------End-footer-définitif------------------------------------*/
+
+/* ------------------------------------Start-MediaQuery------------------------------------*/
+
+@media (max-width: 1000px) {
+    .containerRelease {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .releases {
+        display: flex;
+        flex-direction: column;
+    }
+    .releases article img {
+        width: 70%;
+    }
+    .titleH {
+        display: none;
+    }
+}
