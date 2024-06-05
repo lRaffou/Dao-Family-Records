@@ -77,6 +77,11 @@ nav {
     width: 2vw;
 }
 /* ------------------------------------End-NavBar-définitive------------------------------------*/
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 .video {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
@@ -203,12 +208,6 @@ input:checked + label .descriptionCardWrapper {
 /* ------------------------------------End-Wrapper-définitif------------------------------------*/
 
 /* ------------------------------------Start-Release-définitif------------------------------------*/
-.releases {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    /* background-color: bisque; */
-}
 .containerRelease {
     width: 100%;
     height: 80vh;
@@ -216,19 +215,49 @@ input:checked + label .descriptionCardWrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     position: relative;
 }
-.releases article img {
+.releases {
     display: flex;
-    align-items: center;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+    /* gap: 5vw; */
+    /* background-color: bisque; */
+}
+.releases2 {
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+    /* background-color: bisque; */
+}
+.releases img {
+    /* display: flex; */
+    /* align-items: center; */
     width: 100%;
     height: 20em;
     border: 2px solid #fff;
 }
-.containerRelease h2 {
+.releases2 img {
+    /* display: flex; */
+    /* align-items: center; */
+    width: 100%;
+    height: 20em;
+    border: 2px solid #fff;
+}
+.titleHa {
     position: absolute;
     margin-top: 36.5vw;
+    width: 15vh;
+    transform-origin: 0 0;
+    transform: rotate(-90deg);
+    font-size: 5vw;
+    font-family: "Montserrat-Bold";
+    text-transform: uppercase;
+    letter-spacing: 1vw;
+}
+.titleQuery {
+    display: none;
 }
 /* ------------------------------------End-Release-définitif------------------------------------*/
 
@@ -241,6 +270,9 @@ input:checked + label .descriptionCardWrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+.eventPrincipal a {
+    display: none;
 }
 .eventPrincipal {
     /* background: bisque; */
@@ -259,6 +291,7 @@ input:checked + label .descriptionCardWrapper {
     width: 45%;
     font-size: 4vw;
     text-align: end;
+    padding-left: 8vw;
 }
 .eventPrincipal img {
     height: 100%;
@@ -302,12 +335,12 @@ input:checked + label .descriptionCardWrapper {
     width: 15vh;
     transform-origin: 0 0;
     transform: rotate(-90deg);
-    margin-top: 33vw;
+    margin-top: 24vh;
     font-size: 5vw;
     font-family: "Montserrat-Bold";
     text-transform: uppercase;
     letter-spacing: 1vw;
-    /* position: absolute; */
+    position: absolute;
     /* writing-mode: vertical-rl; */
     /* text-orientation: calc(90); */
     /* direction: ltr;
@@ -414,19 +447,54 @@ footer h6 {
 /* ------------------------------------Start-MediaQuery------------------------------------*/
 
 @media (max-width: 1000px) {
+    /* * {
+        overflow-x: hidden;
+    } */
     .containerRelease {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        align-items: center;
+        gap: 2vh;
+        height: 100%;
+        margin-top: 3vh;
     }
     .releases {
         display: flex;
         flex-direction: column;
+        gap: 5vw;
     }
-    .releases article img {
-        width: 70%;
+    .releases2 {
+        display: none;
     }
+    .titleQuery {
+        display: flex;
+        text-transform: uppercase;
+        font-family: "Montserrat-Bold";
+        font-size: 9vw;
+        letter-spacing: 1.5vw;
+    }
+    .titleHa,
     .titleH {
         display: none;
+    }
+    .containerEvents {
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+    }
+    .eventPrincipal a {
+        display: flex;
+        justify-content: center;
+    }
+    .eventPrincipalQuery img {
+        width: 80%;
+        height: 80%;
+    }
+    .eventPrincipalQuery {
+        background-color: aqua;
+        background-image: none;
+        /* display: flex; */
+        flex-direction: column;
+        /* align-items: center; */
     }
 }
