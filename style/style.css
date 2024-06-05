@@ -274,6 +274,9 @@ input:checked + label .descriptionCardWrapper {
 .eventPrincipal a {
     display: none;
 }
+.eventParaQuery {
+    display: none;
+}
 .eventPrincipal {
     /* background: bisque; */
     width: 100%;
@@ -284,7 +287,7 @@ input:checked + label .descriptionCardWrapper {
     background-size: contain;
     background-position: 34.6vw;
 }
-.eventPrincipal p {
+.eventPara {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -431,6 +434,7 @@ footer h6 {
     border: none;
     background: transparent;
     font-size: 1.3vw;
+    color: #fff;
 }
 #email:focus {
     outline: none;
@@ -478,23 +482,68 @@ footer h6 {
         display: none;
     }
     .containerEvents {
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* align-items: center; */
+        align-items: center;
+        /* background-color: aqua; */
+        /* margin-top: -10vh; */
+        /* justify-content: center; */
     }
     .eventPrincipal a {
         display: flex;
         justify-content: center;
     }
     .eventPrincipalQuery img {
-        width: 80%;
-        height: 80%;
+        width: 90%;
+        height: 100%;
     }
     .eventPrincipalQuery {
-        background-color: aqua;
+        /* background-color: aqua; */
         background-image: none;
-        /* display: flex; */
         flex-direction: column;
-        /* align-items: center; */
+        height: 40%;
+        /* margin-top: 10vh; */
+    }
+    .eventPara {
+        display: none;
+    }
+    .eventParaQuery {
+        display: block;
+        text-align: center;
+        font-size: 5vw;
+        margin-bottom: 1vh;
+    }
+    .eventNext {
+        /* background-color: aqua; */
+        flex-direction: column;
+        gap: 2vh;
+        height: 50%;
+        width: 280%;
+        /* margin-top: -10vh; */
+        background-size: contain;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10vh;
+    }
+    .footer {
+        flex-direction: column-reverse;
+        margin-top: 8vh;
+    }
+    .news, .news img {
+        font-size: 4vw;
+        width: 18vw;
+        gap: 6vw;
+    }
+    .logoFooter img {
+        width: 80vw;
+        margin-top: 5vh;
+    }
+    .partenaires {
+        font-size: 4vw;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 15vh;
+        margin-top: 2vh;
     }
 }
