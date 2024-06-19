@@ -21,7 +21,11 @@ body {
     text-align: center;
 }
 /* ------------------------------------Start-NavBar-définitive------------------------------------*/
-
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
 .menuNav {
     /* width: 100%; */
     overflow: hidden;
@@ -37,6 +41,7 @@ body {
     padding: 2% 4% 2% 4%;
     margin: 0 2% 2% 2%;
     /* filter: blur(4px); */
+    /* z-index: 100; */
 }
 .menuNav ul {
     list-style: none;
@@ -55,6 +60,7 @@ body {
     align-items: center;
     width: 100%;
     /* height: 10vh; */
+
 }
 .nameDfrNav {
     text-transform: uppercase;
@@ -63,4 +69,23 @@ body {
 }
 .spaceNavTop {
     width: 49%;
+}
+/* ------------------------------------End-NavBar-définitive------------------------------------*/
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: -3%;
+}
+.video {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
