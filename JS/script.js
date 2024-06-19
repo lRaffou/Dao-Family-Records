@@ -27,6 +27,6 @@ const dragStop = () => {
     isDragStart = false;
 }
 
-carousel.addEventListener("mousedown", dragStart);
-carousel.addEventListener("mousemove", dragging);
+carousel.addEventListener("touchstart", dragStart);
+carousel.addEventListener("touchmove", dragging);
 carousel.addEventListener("mouseup", dragStop);

@@ -111,7 +111,8 @@ main {
 .carousel img {
     height: 340px;
     object-fit: cover;
-    width: calc(100% /3);
+    /* width: calc(100% /3); */
+    width: 100%;
     margin-left: 14px;
 }
 .wrapper {
