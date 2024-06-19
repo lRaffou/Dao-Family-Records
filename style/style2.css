@@ -107,12 +107,20 @@ main {
     font-size: 0px;
     cursor: pointer;
     overflow: hidden;
+    scroll-behavior: smooth;
+}
+.carousel.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.carousel.dragging img {
+    pointer-events: none;
 }
 .carousel img {
     height: 340px;
     object-fit: cover;
-    /* width: calc(100% /3); */
-    width: 100%;
+    width: calc(100% /3);
+    /* width: 100%; */
     margin-left: 14px;
 }
 .wrapper {
@@ -137,6 +145,7 @@ main {
 }
 .wrapper i:first-child{
     left: -23px;
+    display: none;
 }
 .wrapper i:last-child{
     right: -23px;
