@@ -148,9 +148,6 @@ carousel.addEventListener("touchmove", dragging);
 carousel.addEventListener("touchend", dragStop);
 
 
-window.addEventListener("orientationchange", function() {
-    if (window.orientation === 90 || window.orientation === -90) {
-      // Landscape mode
-      alert("Please switch to portrait mode to use this site.");
-    }
-  });
+// ____________________________________Carousel____________________________________
+
+// ____________________________________Carousel____________________________________
