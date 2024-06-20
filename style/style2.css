@@ -150,3 +150,29 @@ main {
 .wrapper i:last-child {
     right: -23px;
 }
+
+
+
+@media (orientation: landscape) {
+    body {
+      display: none;
+    }
+  }
+  
+  /* Alternatively, show a message asking to switch to portrait mode */
+  @media (orientation: landscape) {
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    body * {
+      display: none; /* Hide all content */
+    }
+    .portrait-message {
+      display: block;
+      font-size: 24px;
+      padding: 20px;
+    }
+  }

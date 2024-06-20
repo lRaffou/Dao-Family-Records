@@ -4,17 +4,6 @@ function send() {
 
 // document.getElementById("year").innerText = new Date().getFullYear();
 
-screen.lockOrientationUniversal = function(orientation) {
-    let lockFunction = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation;
-    if (lockFunction && lockFunction(orientation)) {
-        console.log("Orientation was locked");
-    } else {
-        console.error("Orientation lock failed");
-    }
-};
-
-screen.lockOrientationUniversal("portrait-primary");
-
 
 // ____________________________________Carousel____________________________________
 
@@ -157,3 +146,11 @@ carousel.addEventListener("mouseleave", dragStop);
 carousel.addEventListener("touchstart", dragStart);
 carousel.addEventListener("touchmove", dragging);
 carousel.addEventListener("touchend", dragStop);
+
+
+window.addEventListener("orientationchange", function() {
+    if (window.orientation === 90 || window.orientation === -90) {
+      // Landscape mode
+      alert("Please switch to portrait mode to use this site.");
+    }
+  });
