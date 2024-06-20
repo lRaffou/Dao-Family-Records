@@ -4,6 +4,8 @@ function send() {
 
 // document.getElementById("year").innerText = new Date().getFullYear();
 
+screen.lockOrientation("portrait");
+
 // ____________________________________Carousel____________________________________
 
 // const carousel = document.querySelector(".carousel");

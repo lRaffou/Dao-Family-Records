@@ -101,7 +101,6 @@ main {
     padding: 0 35px;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
 }
 .wrapper .carousel {
     white-space: nowrap;
@@ -118,8 +117,8 @@ main {
     pointer-events: none;
 }
 .carousel img {
-    height: 100%;
-    /* object-fit: cover; */
+    height: 340px;
+    object-fit: cover;
     /* width: calc(100% /3); */
     width: 100%;
     margin-left: 14px;
