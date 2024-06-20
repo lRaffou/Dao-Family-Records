@@ -63,3 +63,14 @@ carousel.addEventListener("mouseleave", dragStop);
 carousel.addEventListener("touchstart", dragStart);
 carousel.addEventListener("touchmove", dragging);
 carousel.addEventListener("touchend", dragStop);
+
+screen.lockOrientationUniversal = function(orientation) {
+    let lockFunction = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation;
+    if (lockFunction && lockFunction(orientation)) {
+        console.log("Orientation was locked");
+    } else {
+        console.error("Orientation lock failed");
+    }
+};
+
+screen.lockOrientationUniversal("portrait-primary");

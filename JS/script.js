@@ -4,7 +4,17 @@ function send() {
 
 // document.getElementById("year").innerText = new Date().getFullYear();
 
-screen.lockOrientation("portrait");
+screen.lockOrientationUniversal = function(orientation) {
+    let lockFunction = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation;
+    if (lockFunction && lockFunction(orientation)) {
+        console.log("Orientation was locked");
+    } else {
+        console.error("Orientation lock failed");
+    }
+};
+
+screen.lockOrientationUniversal("portrait-primary");
+
 
 // ____________________________________Carousel____________________________________
 
