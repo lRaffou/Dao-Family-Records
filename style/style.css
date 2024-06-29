@@ -14,23 +14,23 @@
 body {
     background-color: #000000;
     color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
     font-family: "Montserrat-Regular";
-    text-align: center;
 }
 main {
     display: flex;
     flex-direction: column;
     margin-top: -3%;
-    gap: 2vh;
+    gap: 20px;
 }
 /* ------------------------------------Start-NavBar-définitive------------------------------------*/
 header {
     position: sticky;
     top: 0;
     z-index: 100;
+    text-align: center;
 }
 .menuNav {
     /* width: 100%; */
@@ -42,13 +42,12 @@ header {
     background-color: #000;
     border-radius: 50px;
     box-shadow: 0px 0px 60px 40px #000000;
-    opacity: 90%;
+    /* opacity: 90%; */
     font-size: 3vw;
     padding: 2% 4% 2% 4%;
     margin: 0 2% 2% 2%;
     /* filter: blur(4px); */
     /* z-index: 100; */
-    background
 }
 .menuNav ul {
     list-style: none;
@@ -56,7 +55,8 @@ header {
     justify-content: center;
     align-items: center;
 }
-.menuNav a, .menuNav img {
+.menuNav a,
+.menuNav img {
     color: #fff;
     text-decoration: none;
     width: 8vw;
@@ -160,43 +160,42 @@ header {
 .wrapper i:last-child {
     right: 3px;
 }
+/* ------------------------------------End-Wrapper-définitif------------------------------------*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ------------------------------------Start-Album-définitif------------------------------------*/
+.containerReleases h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat-bold";
+    font-size: 13vw;
+}
+.articleReleases a {
+    width: 40vw;
+    border: 2px solid #fff;
+}
+.articleReleases img {
+    width: 100%;
+    height: 100%;
+}
+.articleReleases {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.6em;
+}
+/* ------------------------------------End-Album-définitif------------------------------------*/
 
 @media screen and (min-width: 700px) {
     .carousel img {
-        width: calc(100% /2);
+        width: calc(100% / 2);
         height: 430px;
     }
 }
-@media screen and (min-width: 1000px) {
+/* @media screen and (min-width: 1000px) {
     .carousel img {
         width: calc(100% /3);
     }
     .containerWrapper {
-        /* padding: 0 35px; */
+        padding: 0 35px;
     }
-}
+} */
