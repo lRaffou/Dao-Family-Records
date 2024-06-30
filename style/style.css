@@ -103,6 +103,8 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
+    border: 2px solid #fff;
+
 }
 /* ------------------------------------End-Iframe-définitif------------------------------------*/
 /* ------------------------------------Start-Wrapper-définitif------------------------------------*/
@@ -125,6 +127,7 @@ header {
 }
 .carousel.dragging img {
     pointer-events: none;
+    
 }
 .carousel img {
     height: 340px;
@@ -170,7 +173,7 @@ header {
     font-size: 13vw;
 }
 .articleReleases a {
-    width: 40vw;
+    width: calc(85vw / 2);
     border: 2px solid #fff;
 }
 .articleReleases img {
@@ -185,17 +188,73 @@ header {
 }
 /* ------------------------------------End-Album-définitif------------------------------------*/
 
+/* ------------------------------------Start-Album-définitif------------------------------------*/
+.containerEvents h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat-bold";
+    font-size: 13vw;
+}
+.containerEvents h3 {
+    text-transform: uppercase;
+    font-family: "Montserrat-bold";
+    font-size: 5vw;
+}
+.containerEvents h6 {
+    text-transform: uppercase;
+    font-family: "Montserrat-bold";
+    /* font-size: 5vw; */
+}
+.articleEvents a {
+    width: 90vw;
+    border: 2px solid #fff;
+}
+.articleEvents img {
+    width: 100%;
+    height: 100%;
+}
+.articleEvents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.6em;
+    /* background: yellow; */
+}
+.articleEvents p {
+    width: 90vw;
+    letter-spacing: 0.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 700px) {
     .carousel img {
         width: calc(100% / 2);
         height: 430px;
     }
 }
-/* @media screen and (min-width: 1000px) {
+@media screen and (min-width: 1000px) {
     .carousel img {
         width: calc(100% /3);
     }
     .containerWrapper {
         padding: 0 35px;
     }
-} */
+}
