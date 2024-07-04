@@ -258,6 +258,7 @@ header {
 .articleArtist a {
     width: calc(90vw / 1);
     border: 2px solid #fff;
+    /* border-top: #000; */
 }
 .articleArtist img {
     width: 100%;
@@ -271,10 +272,49 @@ header {
 /* ------------------------------------End-Artist-définitif------------------------------------*/
 
 /* ------------------------------------Start-Footer-définitif------------------------------------*/
-
-
-
-
+.containerFooter {
+    display: flex;
+    padding-left: 3vw;
+    padding-top: 3vh;
+    border-top: 1px solid #fff;
+    /* justify-content: center; */
+    /* width: 42%; */
+}
+.footerTitle article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    /* flex-direction: column; */
+    gap: 2rem;
+    /* flex-wrap: wrap; */
+    /* width: 60vw; */
+    /* background: bisque; */
+}
+.footerTitle {
+    flex-direction: column;
+    width: 60vw;
+    text-align: center;
+}
+.containerFooter img {
+    /* display: flex; */
+    width: 40vw;
+}
+/* .containerFooter article :nth-child(2) {
+    display: flex;
+    width: 30vw;
+} */
+.containerFooter article img {
+    /* display: flex; */
+    /* background: bisque; */
+    width: 6vw;
+}
+footer h6 {
+    margin-bottom: 10vh;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 1.45vw;
+}
 
 
 
