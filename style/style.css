@@ -310,10 +310,6 @@ header {
     }
 }
 
-
-
-
-
 /* ------------------------------------Start-Video-Page-définitif------------------------------------*/
 .videoList {
     display: flex;
@@ -323,4 +319,9 @@ header {
 }
 .singleVideo {
     width: calc(90vw / 2);
+}
+.singleVideo h2 {
+    font-size: 2vw;
+    font-family: "Montserrat-Bold";
+    text-transform: uppercase;
 }
