@@ -315,3 +315,12 @@ header {
 
 
 /* ------------------------------------Start-Video-Page-définitif------------------------------------*/
+.videoList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.singleVideo {
+    width: calc(90vw / 2);
+}
