@@ -28,6 +28,9 @@ body {
 .containerEventsMin {
     display: none;
 }
+.containerArtistMin {
+    display: none;
+}
 main {
     display: flex;
     flex-direction: column;
@@ -329,6 +332,9 @@ header {
     .containerEvents {
         display: none;
     }
+    .containerArtist {
+        display: none;
+    }
     header {
         z-index: 100;
         height: 7vh;
@@ -503,6 +509,7 @@ header {
         display: flex;
         align-items: center;
         position: relative;
+        margin-top: 1.2vh;
     }
     .containerReleases h2 {
         writing-mode: vertical-rl;
@@ -524,6 +531,7 @@ header {
 
     .containerEventsMin {
         display: block;
+        margin-top: 6vh;
     }
     .eventPrincipalMin {
         display: flex;
@@ -573,6 +581,8 @@ header {
     .pastEvents {
         display: flex;
         justify-content: space-around;
+        margin-top: 3vh;
+        margin-bottom: 6vh;
     }
     .pastEvents a {
         width: 30vw;
@@ -586,9 +596,60 @@ header {
         object-fit: contain;
     }
 
-    .containerArtist {
+    .containerArtistMin {
         display: flex;
-        flex-direction: row;
+        align-items: center;
+        position: relative;
+        margin-top: 6vh;
+    }
+    .artistsMin {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3em;
+    }
+    .containerArtistMin h2 {
+        /* display: block; */
+        text-transform: uppercase;
+        font-family: "Montserrat-bold";
+        font-size: 13vw;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        font-size: 6.2vw;
+        white-space: nowrap;
+        transform: rotate(180deg);
+        text-align: center;
+        position: absolute;
+    }
+    .artist12 {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .artist34 {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .articleArtistMin {
+        display: flex;
+        /* justify-content: center; */
+        flex-direction: column;
+        /* margin-bottom: 30px; */
+    }
+    .articleArtistMin a {
+        width: 30vw;
+        border: 2px solid #fff;
+        /* border-top: #000; */
+    }
+    .articleArtistMin img {
+        width: 100%;
+        height: 100%;
+    }
+    .articleArtistMin h3 {
+        text-transform: uppercase;
+        font-family: "Montserrat-bold";
+        font-size: 2vw;
     }
 }
 
