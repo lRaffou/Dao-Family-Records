@@ -62,15 +62,14 @@ header {
     text-decoration: none;
     width: 8vw;
 }
-/* .menuNav li:hover {
+.menuNav li:hover {
     color: blue;
-    background: rgb(198,198,198);
-    background: radial-gradient(circle, rgba(198,198,198,1) 0%, rgba(189,189,189,1) 100%);
-    border-radius: 40px 0px 0px 40px;
+    /* background: rgb(190, 53, 53); */
+    /* background: radial-gradient(circle, rgb(119, 50, 50) 0%, rgba(189,189,189,1) 100%); */
+    border-radius: 40px 40px 40px 40px;
     opacity: 50%;
     background-size: 1px;
-
-} */
+}
 .navTop {
     display: flex;
     justify-content: center;
@@ -86,8 +85,15 @@ header {
     width: 49%;
     font-size: 3vw;
 }
-.spaceNavTop {
+.connexionNavTop {
     width: 49%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.connexionImg {
+    width: 7vw;
+    margin-right: 2vw;
 }
 /* ------------------------------------End-NavBar-définitive------------------------------------*/
 
@@ -325,3 +331,6 @@ header {
     font-family: "Montserrat-Bold";
     text-transform: uppercase;
 }
+/* ------------------------------------End-Video-Page-définitif------------------------------------*/
+
+/* ------------------------------------Start-Video-Page-définitif------------------------------------*/
