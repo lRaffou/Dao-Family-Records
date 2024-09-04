@@ -431,7 +431,7 @@ header {
     .cardWrapper > .titleCardWrapper {
         display: flex;
         flex-wrap: nowrap;
-    
+
         /* background-color: #ac99ee; */
         /* border: 2px solid #fc7b7b; */
     }
@@ -670,4 +670,121 @@ header {
 }
 /* ------------------------------------End-Video-Page-définitif------------------------------------*/
 
-/* ------------------------------------Start-Video-Page-définitif------------------------------------*/
+/* ------------------------------------Start-Events-Page-définitif------------------------------------*/
+.mainEventPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3vh 0 3vh 0;
+    gap: 2vh;
+}
+.mainEventPage h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat-bold";
+    font-size: 5.5vw;
+}
+.mainEventPage a {
+    width: 90vw;
+    border: 2px solid #fff;
+}
+.mainEventPage img {
+    width: 100%;
+    height: 100%;
+}
+.mainEventPage h2 {
+    text-align: center;
+    font-family: "Montserrat-bold";
+    font-size: 4vw;
+}
+.mainEventPage p {
+    width: 90vw;
+    letter-spacing: 0.2rem;
+}
+
+.pastEventsPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    margin: 3vh 0 3vh 0;
+}
+.pastEventsPage h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat-bold";
+    font-size: 6vw;
+}
+.pastEventsPage a {
+    width: 90vw;
+    border: 2px solid #fff;
+    /* border-radius: 50px 0 50px; */
+}
+.pastEventsPage img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* ------------------------------------End-Events-Page-définitif------------------------------------*/
+
+
+/* ------------------------------------Start-Artists-Page-définitif------------------------------------*/
+.artisteCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.artisteBeforeClick {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+.artisteBeforeClick h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat-bold";
+    font-size: 5vw;
+}
+.artisteBeforeClick p{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat-bold";
+    font-size: 3vw;
+}
+.artisteBeforeClick img {
+    width: 50vw;
+    border: 2px solid #fff;
+}
+
+.artistAfterClick {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3vh 2vw 3vh 2vw;
+    gap: 2vh;
+    width: 95vw;
+}
+.artistAfterClickBio {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    gap: 1vh;
+}
+.artistAfterClick img {
+    width: 45vw;
+    border: 2px solid #fff;
+}
+.artistAfterClickGallery {
+    display: flex;
+    justify-content: center;
+}
+.galleryOne {
+    display: flex;
+    flex-direction: column;
+}
+.galleryOne img {
+    width: 45vw;
+}
