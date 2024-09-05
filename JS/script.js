@@ -150,4 +150,13 @@ carousel.addEventListener("touchend", dragStop);
 
 // ___________________________________End_Carousel____________________________________
 
-// ____________________________________Carousel____________________________________
+
+// ____________________________________Start_Artist____________________________________
+
+// let artisteBeforeClick = document.getElementsByClassName("artisteBeforeClick");
+// let artistAfterClick = document.getElementsByClassName("artistAfterClick");
+
+// artisteBeforeClick.addEventListener("click", () => {
+    
+// })
+
