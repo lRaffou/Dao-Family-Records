@@ -765,8 +765,8 @@ header {
     flex-direction: column;
     align-items: center;
     margin: 3vh 2vw 3vh 2vw;
-    gap: 2vh;
     width: 95vw;
+    gap: 5vh;
 }
 .artistAfterClickBio {
     display: flex;
@@ -789,4 +789,7 @@ header {
 }
 .galleryOne img {
     width: 45vw;
+}
+.galleryTwo {
+    object-fit: cover;
 }
