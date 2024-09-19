@@ -878,6 +878,7 @@ header {
     font-family: "Montserrat-Bold";
     transition: transform 0.3s, box-shadow 0.3s;
     user-select: none;
+    color: #000;
 }
 .formButton:hover {
     box-shadow: 1px 5px 15px #fff;
