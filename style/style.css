@@ -728,7 +728,6 @@ header {
 
 /* ------------------------------------End-Events-Page-définitif------------------------------------*/
 
-
 /* ------------------------------------Start-Artists-Page-définitif------------------------------------*/
 .artisteCard {
     display: flex;
@@ -792,4 +791,95 @@ header {
 }
 .galleryTwo {
     object-fit: cover;
+}
+
+/* ------------------------------------End-Artists-Page-définitif------------------------------------*/
+
+/* ------------------------------------Start-Connect-Page-définitif------------------------------------*/
+.formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3vh 0;
+    /* background-color: bisque; */
+}
+.formWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+}
+.cardFormWrapper {
+    width: 90vw;
+    padding: 2vh;
+    /* background-color: rgb(255 255 255 /35%); */
+}
+.cardFormHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 20px 0;
+    font-size: 4vw;
+    box-shadow: 0px 3px 8px #fff;
+    border-radius: 50px;
+    border: 1px solid #fff;
+}
+.formHeader {
+    flex: 50%;
+    text-align: center;
+    padding: 10px 0;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    user-select: none;
+    cursor: pointer;
+}
+.active {
+    box-shadow: inset 1px 1px 2px rgb(255 255 255 /55%),
+    inset -1px 1px 2px rgb(255 255 255 /55%),
+    inset -1px -1px 2px rgb(255 255 255 /55%),
+    inset 1px -1px 2px rgb(255 255 255 /55%);
+    border-color: #fff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+.cardFormBody {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 40px 0;
+    text-align: center;
+}
+.cardFormBody form {
+    flex: 0 0 100%;
+}
+.toggleForm {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3, visibility 0.3s;
+}
+.formControl {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgb(255 255 255 /65%);
+    background: none;
+    outline: none;
+    padding: 10px 5px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.formControl::placeholder {
+    color: rgb(255 255 255 /65%);
+}
+.formButton {
+    border: 1px solid transparent;
+    padding: 1rem 3rem;
+    background-color: #fff;
+    border-radius: 50px;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-family: "Montserrat-Bold";
+    transition: transform 0.3s, box-shadow 0.3s;
+    user-select: none;
+}
+.formButton:hover {
+    box-shadow: 1px 5px 15px #fff;
+    transform: translateY(-5px);
 }
