@@ -18,7 +18,7 @@ function renderHeader()
         <script src="/js/script.js" defer></script>
         <script src="/js/scriptArtist.js" defer></script>
         <script src="/js/scriptProfil.js" defer></script>
-        <title>Document</title>
+        <title>Dao Family Records</title>
     </head>
 
     <body>
@@ -43,16 +43,19 @@ function renderHeader()
                             <a href="/index.php"><img src="/img/icons8-accueil-48.png" alt="df" />Accueil</a>
                         </li>
                         <li>
-                            <a href="/controller/evenement.php"><img src="/img/icons8-two-tickets-50.png" alt="df" />Events</a>
+                            <a href="/controller/evenement.php"><img src="/img/icons8-two-tickets-50.png"
+                                    alt="df" />Events</a>
                         </li>
                         <li>
                             <a href="/controller/artiste.php"><img src="/img/icons8-artiste-48.png" alt="df" />Artistes</a>
                         </li>
                         <li>
-                            <a href="/controller/video.php"><img src="/img/icons8-lecture-de-youtube-48.png" alt="df" />Vidéos</a>
+                            <a href="/controller/video.php"><img src="/img/icons8-lecture-de-youtube-48.png"
+                                    alt="df" />Vidéos</a>
                         </li>
                         <li>
-                            <a href="<?php echo isset($_SESSION['isConnected']) && $_SESSION['isConnected'] ? '/controller/profil.php' : '/controller/connexion.php'; ?>">
+                            <a
+                                href="<?php echo isset($_SESSION['isConnected']) && $_SESSION['isConnected'] ? '/controller/profil.php' : '/controller/connexion.php'; ?>">
                                 <img src="/img/icons8-male-user-48.png" alt="df" />
                                 <?php echo isset($_SESSION['isConnected']) && $_SESSION['isConnected'] ? 'Profil' : 'Connexion'; ?>
                             </a>
@@ -77,7 +80,8 @@ function renderHeader()
                         <p>Dao Family Records</p>
                     </div>
                     <div class="iconCoMin">
-                        <a href="<?php echo isset($_SESSION['isConnected']) && $_SESSION['isConnected'] ? '/controller/profil.php' : '/controller/connexion.php'; ?>">
+                        <a
+                            href="<?php echo isset($_SESSION['isConnected']) && $_SESSION['isConnected'] ? '/controller/profil.php' : '/controller/connexion.php'; ?>">
                             <img src="/img/icons8-male-user-48.png" alt="icon de connexion" />
                         </a>
                     </div>
