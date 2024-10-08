@@ -1,0 +1,952 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url(/fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url(/fonts/Montserrat/static/Montserrat-Bold.ttf);
+}
+
+body {
+    background-color: #000000;
+    color: #fff;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    font-family: "Montserrat-Regular";
+}
+.navMin1000 {
+    display: none;
+}
+.wrapperMin {
+    display: none;
+}
+.containerEventsMin {
+    display: none;
+}
+.containerArtistMin {
+    display: none;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: -3%;
+    gap: 2.2vh;
+}
+/* ------------------------------------Start-NavBar-définitive------------------------------------*/
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    text-align: center;
+}
+.menuNav {
+    /* width: 100%; */
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    /* box-shadow: 0px 0px 60px 40px #000000; */
+    /* opacity: 90%; */
+    font-size: 3vw;
+    padding: 2% 4% 2% 4%;
+    margin: 0 2% 2% 2%;
+    /* filter: blur(4px); */
+    /* z-index: 100; */
+}
+.menuNav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menuNav a,
+.menuNav img {
+    color: #fff;
+    text-decoration: none;
+    width: 8vw;
+}
+.menuNav li:hover {
+    color: blue;
+    /* background: rgb(190, 53, 53); */
+    /* background: radial-gradient(circle, rgb(119, 50, 50) 0%, rgba(189,189,189,1) 100%); */
+    border-radius: 40px 40px 40px 40px;
+    opacity: 50%;
+    background-size: 1px;
+}
+.navTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* height: 10vh; */
+}
+.logoNav img {
+    height: 7vh;
+}
+.nameDfrNav {
+    text-transform: uppercase;
+    width: 49%;
+    font-size: 3vw;
+}
+.connexionNavTop {
+    width: 49%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.connexionImg {
+    width: 7vw;
+    margin-right: 2vw;
+}
+/* ------------------------------------End-NavBar-définitive------------------------------------*/
+
+/* ------------------------------------Start-Iframe-définitif------------------------------------*/
+.video {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+}
+/* ------------------------------------End-Iframe-définitif------------------------------------*/
+/* ------------------------------------Start-Wrapper-définitif------------------------------------*/
+.containerWrapper {
+    display: flex;
+    /* padding: 0 35px; */
+    align-items: center;
+    justify-content: center;
+}
+.wrapper .carousel {
+    white-space: nowrap;
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.carousel.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.carousel.dragging img {
+    pointer-events: none;
+}
+.carousel img {
+    height: 340px;
+    object-fit: contain;
+    /* width: calc(100% /3); */
+    width: 100%;
+    margin-left: 14px;
+}
+.wrapper {
+    max-width: 1200px;
+    position: relative;
+}
+.carousel img:first-child {
+    margin-left: 0px;
+}
+.wrapper i {
+    /* background: #313131; */
+    font-size: 1.2rem;
+    width: 46px;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    cursor: pointer;
+    /* border-radius: 50%; */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.wrapper i:first-child {
+    left: 3px;
+    display: none;
+}
+.wrapper i:last-child {
+    right: 3px;
+}
+/* ------------------------------------End-Wrapper-définitif------------------------------------*/
+
+/* ------------------------------------Start-Album-définitif------------------------------------*/
+.containerReleases h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat-bold";
+    font-size: 13vw;
+}
+.articleReleases a {
+    width: calc(85vw / 2);
+    border: 2px solid #fff;
+}
+.articleReleases img {
+    width: 100%;
+    height: 100%;
+}
+.articleReleases {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.6em;
+}
+/* ------------------------------------End-Album-définitif------------------------------------*/
+
+/* ------------------------------------Start-Events-définitif------------------------------------*/
+.containerEvents h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat-bold";
+    font-size: 13vw;
+}
+.containerEvents h3 {
+    text-transform: uppercase;
+    font-family: "Montserrat-bold";
+    font-size: 5vw;
+}
+.containerEvents h4 {
+    text-transform: uppercase;
+    font-family: "Montserrat-bold";
+    font-size: 2.5vw;
+    width: 100%;
+    /* text-align: center; */
+}
+.articleEvents a {
+    width: 90vw;
+    border: 2px solid #fff;
+}
+.articleEvents img {
+    width: 100%;
+    height: 100%;
+}
+.articleEvents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.6em;
+    /* background: yellow; */
+    text-align: center;
+}
+.articleEvents p {
+    width: 90vw;
+    letter-spacing: 0.2rem;
+}
+/* ------------------------------------End-Events-définitif------------------------------------*/
+
+/* ------------------------------------Start-Spotify-définitif------------------------------------*/
+.spotify {
+    display: flex;
+    justify-content: center;
+}
+/* ------------------------------------End-Spotify-définitif------------------------------------*/
+
+/* ------------------------------------Start-Artist-définitif------------------------------------*/
+.containerArtist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* gap: 0.5em; */
+}
+.containerArtist h2 {
+    /* text-align: center; */
+    text-transform: uppercase;
+    font-family: "Montserrat-bold";
+    font-size: 13vw;
+}
+.articleArtist {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.articleArtist a {
+    width: calc(90vw / 1);
+    border: 2px solid #fff;
+    /* border-top: #000; */
+}
+.articleArtist img {
+    width: 100%;
+    height: 100%;
+}
+.articleArtist h3 {
+    text-transform: uppercase;
+    font-family: "Montserrat-bold";
+    font-size: 8vw;
+}
+/* ------------------------------------End-Artist-définitif------------------------------------*/
+
+/* ------------------------------------Start-Footer-définitif------------------------------------*/
+.containerFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #fff;
+    margin-bottom: 11vh;
+    height: 50vh;
+    gap: 3vh;
+    padding-top: 3vh;
+}
+.logoFooter {
+    width: 50vw;
+    /* margin: 3vh 0 3vh 0; */
+}
+.followFooter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem 5rem;
+}
+.followFooter img {
+    width: 15vw;
+}
+/* ------------------------------------End-Footer-définitif------------------------------------*/
+
+/* ------------------------------------Start-Video-Page-définitif------------------------------------*/
+.videoList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.singleVideo {
+    width: calc(90vw / 2);
+}
+.singleVideo h2 {
+    font-size: 2vw;
+    font-family: "Montserrat-Bold";
+    text-transform: uppercase;
+}
+/* ------------------------------------End-Video-Page-définitif------------------------------------*/
+
+/* ------------------------------------Start-Events-Page-définitif------------------------------------*/
+.mainEventPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3vh 0 3vh 0;
+    gap: 2vh;
+}
+.mainEventPage h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat-bold";
+    font-size: 5.5vw;
+}
+.mainEventPage a {
+    width: 90vw;
+    border: 2px solid #fff;
+}
+.mainEventPage img {
+    width: 100%;
+    height: 100%;
+}
+.mainEventPage h2 {
+    text-align: center;
+    font-family: "Montserrat-bold";
+    font-size: 4vw;
+}
+.mainEventPage p {
+    width: 90vw;
+    letter-spacing: 0.2rem;
+}
+
+.pastEventsPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    margin: 3vh 0 3vh 0;
+}
+.pastEventsPage h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat-bold";
+    font-size: 6vw;
+}
+.pastEventsPage a {
+    width: 90vw;
+    border: 2px solid #fff;
+    /* border-radius: 50px 0 50px; */
+}
+.pastEventsPage img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* ------------------------------------End-Events-Page-définitif------------------------------------*/
+
+/* ------------------------------------Start-Artists-Page-définitif------------------------------------*/
+.artisteCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #fff;
+}
+.artisteBeforeClick {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    margin: 3px 0 3px 0;
+}
+.artisteBeforeClick h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat-bold";
+    font-size: 5vw;
+}
+.artisteBeforeClick p {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat-bold";
+    font-size: 3vw;
+}
+.artisteBeforeClick img {
+    width: 50vw;
+    border: 2px solid #fff;
+}
+
+.artistAfterClick {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3vh 2vw 3vh 2vw;
+    width: 95vw;
+    gap: 5vh;
+}
+.artistAfterClickBio {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    gap: 1vh;
+}
+.artistAfterClick img {
+    width: 45vw;
+    border: 2px solid #fff;
+}
+.artistAfterClickGallery {
+    display: flex;
+    justify-content: center;
+}
+.galleryOne {
+    display: flex;
+    flex-direction: column;
+}
+.galleryOne img {
+    width: 45vw;
+}
+.galleryTwo {
+    object-fit: cover;
+}
+/* ------------------------------------End-Artists-Page-définitif------------------------------------*/
+
+/* ------------------------------------Start-Connect-Page-définitif------------------------------------*/
+.formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3vh 0;
+    /* background-color: bisque; */
+}
+.formWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+}
+.cardFormWrapper {
+    width: 90vw;
+    padding: 2vh;
+    /* background-color: rgb(255 255 255 /35%); */
+}
+.cardFormHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 20px 0;
+    font-size: 4vw;
+    box-shadow: 0px 3px 8px #fff;
+    border-radius: 50px;
+    border: 1px solid #fff;
+}
+.formHeader {
+    flex: 50%;
+    text-align: center;
+    padding: 10px 0;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    user-select: none;
+    cursor: pointer;
+}
+.active {
+    box-shadow: inset 1px 1px 2px rgb(255 255 255 /55%),
+        inset -1px 1px 2px rgb(255 255 255 /55%),
+        inset -1px -1px 2px rgb(255 255 255 /55%),
+        inset 1px -1px 2px rgb(255 255 255 /55%);
+    border-color: #fff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+.cardFormBody {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 40px 0;
+    text-align: center;
+}
+.cardFormBody form {
+    flex: 0 0 100%;
+}
+.toggleForm {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3, visibility 0.3s;
+}
+.formControl {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgb(255 255 255 /65%);
+    background: none;
+    outline: none;
+    padding: 10px 5px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.formControl::placeholder {
+    color: rgb(255 255 255 /65%);
+}
+.formButton {
+    border: 1px solid transparent;
+    padding: 1rem 3rem;
+    background-color: #fff;
+    border-radius: 50px;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-family: "Montserrat-Bold";
+    transition: transform 0.3s, box-shadow 0.3s;
+    user-select: none;
+    color: #000;
+}
+.formButton:hover {
+    box-shadow: 1px 5px 15px #fff;
+    transform: translateY(-5px);
+}
+
+/* ------------------------------------End-Connect-Page-définitif------------------------------------*/
+
+/* ------------------------------------Start-Profil-Page-définitif------------------------------------*/
+.profilContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1vh 0;
+}
+.profilContainer h1 {
+    text-transform: uppercase;
+    font-family: "Montserrat-bold";
+    font-size: 8vw;
+}
+.profilContainer p {
+    font-size: 4vw;
+    font-family: "Montserrat-regular";
+}
+.profilContainer a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    font-size: 3vw;
+    font-family: "Montserrat-bold";
+}
+.profilContainer button {
+    background-color: #ff0000;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 2% 4%;
+    font-size: 2.5vw;
+    font-family: "Montserrat-regular";
+}
+.profilContainer button:hover {
+    background-color: #fff;
+    color: #ff0000;
+}
+/* ------------------------------------End-Profil-Page-définitif------------------------------------*/
+
+@media screen and (min-width: 700px) {
+    .carousel img {
+        width: calc(100% / 2);
+        height: 430px;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .navMax1000 {
+        display: none;
+    }
+    .navMin1000 {
+        display: block;
+    }
+    .containerWrapper {
+        display: none;
+    }
+    .containerEvents {
+        display: none;
+    }
+    .containerArtist {
+        display: none;
+    }
+    header {
+        z-index: 100;
+        height: 7vh;
+        /* font-family: "Montserrat-Regular"; */
+        position: sticky;
+        top: 0;
+    }
+    .navMin1000 {
+        display: flex;
+        height: 100%;
+    }
+    .menuNavMin {
+        /* background-color: #b7b7b7; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 49%;
+    }
+    .menuNavMin ul {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+    }
+    .menuNavMin ul li a {
+        text-decoration: none;
+        font-size: 1.5vw;
+        color: #fff;
+    }
+    .divLogoNavMin {
+        display: flex;
+        justify-content: center;
+        width: 2%;
+    }
+    .logoNavMin {
+        scale: 2;
+        padding-top: 1em;
+        height: 2.6vw;
+    }
+    .nameNavMin {
+        /* background-color: #b7b7b7; */
+        display: flex;
+        align-items: center;
+        width: 49%;
+    }
+    .nameDfrNavMin {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        font-family: "Montserrat-Bold";
+        text-transform: uppercase;
+        font-size: 2vw;
+    }
+    .iconCoMin {
+        display: flex;
+    }
+    .iconCoMin img {
+        width: 2vw;
+    }
+    main {
+        margin: 0;
+    }
+    .wrapperMin {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        /* background-color: rgb(0, 110, 255); */
+        padding: 2% 0 2% 0;
+    }
+    .containerMin {
+        /* background-color: rgb(207, 247, 228); */
+        /* border: 2px solid rgb(243, 141, 141); */
+        width: 90%;
+        gap: 2%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        /* margin: 2% 0 2% 0; */
+    }
+    .cardWrapper {
+        width: 100px;
+        /* background-color: rgb(133, 150, 94); */
+        border: 2px solid rgb(255, 255, 255);
+        /* border-radius: .75rem; */
+        border-radius: 2rem;
+        display: flex;
+        align-items: flex-end;
+        transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
+        box-shadow: 0px 0px 30px -5px #ffffffff;
+        overflow: hidden;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+    .cardWrapper > .titleCardWrapper {
+        display: flex;
+        flex-wrap: nowrap;
+
+        /* background-color: #ac99ee; */
+        /* border: 2px solid #fc7b7b; */
+    }
+    .cardWrapper > .titleCardWrapper > .iconCardWrapper {
+        background-color: #ffffff;
+        /* border: 2px solid #f3eeee; */
+        width: 70px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 16px;
+        box-shadow: 0px 30px 100px 30px #ffffffff;
+    }
+    .cardWrapper > .titleCardWrapper > .descriptionCardWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+        height: 100px;
+        width: 520px;
+        opacity: 0;
+        transform: translateY(30px);
+        transition-delay: 0.3s;
+        transition: all 0.3s ease;
+    }
+    .descriptionCardWrapper p {
+        padding-top: 5px;
+        text-shadow: #000;
+        text-shadow: rgb(0, 0, 0) 1px 0 10px;
+        font-size: 195%;
+    }
+    .descriptionCardWrapper h2 {
+        text-transform: uppercase;
+        text-shadow: rgb(0, 0, 0) 1px 0 10px;
+        font-size: 195%;
+    }
+    .radio {
+        display: none;
+    }
+    input:checked + label {
+        width: 60%;
+    }
+    input:checked + label .descriptionCardWrapper {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
+    .cardWrapper[for="cardWrapper1"] {
+        background-image: url("/img/Album_Red_Rave.png");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .cardWrapper[for="cardWrapper2"] {
+        background-image: url("/img/Imagination_Fernando.png");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .cardWrapper[for="cardWrapper3"] {
+        background-image: url("/img/DJ_BABE_Event.png");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .cardWrapper[for="cardWrapper4"] {
+        background-image: url("/img/FeelGood_DJBabe.png");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .cardWrapper[for="cardWrapper5"] {
+        background-image: url("/img/Red_Night.png");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .containerReleases {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-top: 1.2vh;
+    }
+    .containerReleases h2 {
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        font-size: 6.2vw;
+        white-space: nowrap;
+        transform: rotate(180deg);
+        text-align: center;
+        position: absolute;
+    }
+    .articleReleases {
+        padding: 0 8vw 0 8vw;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .articleReleases a {
+        width: 20vw;
+    }
+
+    .containerEventsMin {
+        display: block;
+        margin-top: 6vh;
+    }
+    .eventPrincipalMin {
+        display: flex;
+    }
+    .articleEventsMin {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 90vw;
+        height: 100%;
+        background-image: url("/img/vinyle.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+    }
+    .eventDescriptionMin {
+        display: flex;
+        flex-direction: column;
+        padding: 0 4vw 0 4vw;
+        text-align: center;
+        word-spacing: 10px;
+        font-size: 1.2vw;
+    }
+    .eventDescriptionMin h4 {
+        margin-top: 1em;
+    }
+    .eventDescriptionMin > p {
+        text-align: end;
+        margin-top: 1em;
+    }
+    .eventPrincipalMin h2 {
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        font-size: 6.2vw;
+        white-space: nowrap;
+        transform: rotate(180deg);
+        text-align: center;
+        /* position: absolute; */
+        text-transform: uppercase;
+        font-family: "Montserrat-bold";
+    }
+    .articleEventsMin img {
+        width: 50vw;
+        border: 2px solid #fff;
+    }
+
+    .pastEvents {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 3vh;
+        margin-bottom: 6vh;
+    }
+    .pastEvents a {
+        width: 30vw;
+        height: 30vh;
+        border: 2px solid #fff;
+        border-radius: 50px 0 50px;
+    }
+    .pastEvents img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .containerArtistMin {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-top: 6vh;
+    }
+    .artistsMin {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3em;
+    }
+    .containerArtistMin h2 {
+        /* display: block; */
+        text-transform: uppercase;
+        font-family: "Montserrat-bold";
+        font-size: 13vw;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        font-size: 6.2vw;
+        white-space: nowrap;
+        transform: rotate(180deg);
+        text-align: center;
+        position: absolute;
+    }
+    .artist12 {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .artist34 {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .articleArtistMin {
+        display: flex;
+        /* justify-content: center; */
+        flex-direction: column;
+        /* margin-bottom: 30px; */
+    }
+    .articleArtistMin a {
+        width: 30vw;
+        border: 2px solid #fff;
+        /* border-top: #000; */
+    }
+    .articleArtistMin img {
+        width: 100%;
+        height: 100%;
+    }
+    .articleArtistMin h3 {
+        text-transform: uppercase;
+        font-family: "Montserrat-bold";
+        font-size: 2vw;
+    }
+
+    .profilContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 3vh 0;
+    }
+    .profilContainer h1 {
+        text-transform: uppercase;
+        font-family: "Montserrat-bold";
+        font-size: 5vw;
+    }
+    .profilContainer p {
+        font-size: 1.5vw;
+        font-family: "Montserrat-regular";
+    }
+    .profilContainer a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #000;
+        font-size: 1.5vw;
+        font-family: "Montserrat-bold";
+    }
+    .profilContainer button{
+        font-size: 1vw;
+        font-family: "Montserrat-regular";
+    }
+}
