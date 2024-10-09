@@ -10,5 +10,8 @@ RewriteCond %{REQUEST_FILENAME} !-d
 # Si ce n'est pas un fichier
 RewriteCond %{REQUEST_FILENAME} !-f
 
+RewriteCond %{REQUEST_URI} !.*\.js$
+
+
 # Désigner le fichier routeur
 RewriteRule ^(.+)$ index.php [QSA,L]
