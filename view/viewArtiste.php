@@ -44,9 +44,9 @@ function renderArtiste()
                         techno toulousaine.
                     </p>
                 </article>
-                <iframe style="border-radius: 12px"
+                <iframe style="border-radius:12px"
                     src="https://open.spotify.com/embed/artist/3zpewQ11GYG2ev9Ngdsvi9?utm_source=generator" width="100%"
-                    height="152" frameborder="0" allowfullscreen=""
+                    height="152" frameBorder="0" allowfullscreen=""
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                     loading="lazy"></iframe>
                 <article class="artistAfterClickGallery">
