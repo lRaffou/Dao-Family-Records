@@ -1,5 +1,5 @@
 
-header("Content-Type: application/javascript");
+
 
     function _(e) {
         return document.getElementById(e);

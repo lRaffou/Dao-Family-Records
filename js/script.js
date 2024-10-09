@@ -1,5 +1,5 @@
 
-header("Content-Type: application/javascript");
+
 
     function send() {
         window.open("mailto:r.lourenco@outlook.fr");

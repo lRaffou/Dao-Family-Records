@@ -1,5 +1,5 @@
 
-header("Content-Type: application/javascript");
+
 
     document.addEventListener("DOMContentLoaded", function () {
         // Sélectionner toutes les sections artisteCard
