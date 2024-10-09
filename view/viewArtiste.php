@@ -98,7 +98,7 @@ function renderArtiste()
                 </article>
                 <iframe style="border-radius: 12px"
                     src="https://open.spotify.com/embed/artist/7o0ucOb1npEkb3qhGFIY3U?utm_source=generator" width="100%"
-                    height="152" frameborder="0" allowfullscreen=""
+                    height="152" frameborder="0"
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                     loading="lazy"></iframe>
                 <article class="artistAfterClickGallery">
@@ -144,7 +144,7 @@ function renderArtiste()
                 </article>
                 <iframe style="border-radius: 12px"
                     src="https://open.spotify.com/embed/artist/51UZk9XPK15uZgwQEWE3MK?utm_source=generator" width="100%"
-                    height="152" frameborder="0" allowfullscreen=""
+                    height="152" frameborder="0"
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                     loading="lazy"></iframe>
                 <article class="artistAfterClickGallery">
@@ -186,7 +186,7 @@ function renderArtiste()
                 </article>
                 <iframe style="border-radius: 12px"
                     src="https://open.spotify.com/embed/artist/4FP9ILC4hO3YvOb2R0NIzj?utm_source=generator" width="100%"
-                    height="152" frameborder="0" allowfullscreen=""
+                    height="152" frameborder="0"
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                     loading="lazy"></iframe>
                 <article class="artistAfterClickGallery">

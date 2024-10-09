@@ -178,7 +178,7 @@ function renderAcceuil()
             <article class="spotify">
                 <iframe style="border-radius: 12px"
                     src="https://open.spotify.com/embed/album/3qFHJrWeitkjPo1OWmRBHa?utm_source=generator&theme=0"
-                    width="90%" height="500" frameborder="0" allowfullscreen=""
+                    width="90%" height="500" frameborder="0"
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                     loading="lazy"></iframe>
             </article>
