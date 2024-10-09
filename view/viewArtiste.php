@@ -44,11 +44,11 @@ function renderArtiste()
                         techno toulousaine.
                     </p>
                 </article>
-                <iframe style="border-radius:12px"
+                <!-- <iframe style="border-radius:12px"
                     src="https://open.spotify.com/embed/artist/3zpewQ11GYG2ev9Ngdsvi9?utm_source=generator" width="100%"
                     height="152" frameBorder="0" allowfullscreen=""
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    loading="lazy"></iframe>
+                    loading="lazy"></iframe> -->
                 <article class="artistAfterClickGallery">
                     <article class="galleryOne">
                         <img src="/img/Red_Marshal_5.jpg" alt="Red Marshal" />
@@ -96,11 +96,11 @@ function renderArtiste()
                         univers musical.
                     </p>
                 </article>
-                <iframe style="border-radius: 12px"
+                <!-- <iframe style="border-radius: 12px"
                     src="https://open.spotify.com/embed/artist/7o0ucOb1npEkb3qhGFIY3U?utm_source=generator" width="100%"
                     height="152" frameborder="0" allowfullscreen=""
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    loading="lazy"></iframe>
+                    loading="lazy"></iframe> -->
                 <article class="artistAfterClickGallery">
                     <article class="galleryOne">
                         <img src="/img/Sophie-détouré.png" alt="Dj Babe" />
