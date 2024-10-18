@@ -94,7 +94,7 @@ function deleteUser($bdd, $userId)
         $reqUser->execute([$userId]);
 
         // Ensuite, supprimez l'enregistrement correspondant dans la table Accounts
-        $reqAccount = $bdd->prepare('DELETE FROM Accounts WHERE Id_Accounts = ?');
+        $reqAccount = $bdd->prepare('DELETE FROM accounts WHERE Id_Accounts = ?');
         $reqAccount->execute([$accountId]);
 
         $bdd->commit();
