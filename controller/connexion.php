@@ -26,7 +26,6 @@ function seConnecter()
     //4) Nettoyage des données
     $login = sanitize($_POST['login']);
     $password = sanitize($_POST['password']);
-    print_r("nooooooo");
 
     //5) Se connecter à la BDD
     $bdd = connectBDD($_ENV['hostBDD'], $_ENV['dbnameBDD'], $_ENV['dbLogin'], $_ENV['dbPassword']);
