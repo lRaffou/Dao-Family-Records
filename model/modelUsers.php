@@ -54,7 +54,7 @@ function addUser($bdd, $nom, $prenom, $login, $password, $pseudo, $date_naissanc
         $bdd->beginTransaction();
 
         // Insérer dans la table Accounts
-        $reqAccount = $bdd->prepare('INSERT INTO Accounts() VALUES ()');
+        $reqAccount = $bdd->prepare('INSERT INTO accounts() VALUES ()');
         $reqAccount->execute();
 
         // Récupérer l'ID du compte nouvellement créé
