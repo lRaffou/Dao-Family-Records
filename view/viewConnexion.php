@@ -21,10 +21,11 @@ function renderConnexion($message)
                             <input type="email" name="login" class="formControl" placeholder="Votre email" />
                             <input type="password" name="password" class="formControl" placeholder="Votre mot de passe" />
                             <input type="hidden" name="action" value="login" />
-                            <button class="formButton" type="submit" name="submit_connexion">
-                                Connexion
-                            </button>
+                            <button type="submit" name="submit_connexion" class="formButton">Se connecter</button>
                         </form>
+                        <p>
+                            <a href="/controller/resetPassword.php">Mot de passe oublié ?</a>
+                        </p>
                         <form class="toggleForm" id="formRegister" action="" method="post">
                             <input type="email" name="login" class="formControl" placeholder="Email *" required />
                             <input type="text" name="nom" class="formControl" placeholder="Nom *" required />

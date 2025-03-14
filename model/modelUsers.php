@@ -104,4 +104,34 @@ function deleteUser($bdd, $userId)
         throw new UserModelException("Erreur lors de la suppression de l'utilisateur : " . $error->getMessage(), $error->getCode(), $error);
     }
 }
+
+function saveResetToken($bdd, $email, $token, $expiry)
+{
+    try {
+        $req = $bdd->prepare('UPDATE users SET reset_token = ?, reset_token_expiry = ? WHERE mail = ?');
+        return $req->execute([$token, $expiry, $email]);
+    } catch (PDOException $error) {
+        throw new UserModelException("Erreur lors de la sauvegarde du token : " . $error->getMessage(), $error->getCode(), $error);
+    }
+}
+
+function updatePasswordWithToken($bdd, $token, $newPassword)
+{
+    try {
+        // Vérifier si le token est valide et non expiré
+        $req = $bdd->prepare('SELECT mail FROM users WHERE reset_token = ? AND reset_token_expiry > NOW()');
+        $req->execute([$token]);
+        $result = $req->fetch(PDO::FETCH_ASSOC);
+
+        if (!$result) {
+            return false;
+        }
+
+        // Mettre à jour le mot de passe et supprimer le token
+        $req = $bdd->prepare('UPDATE users SET psswrd = ?, reset_token = NULL, reset_token_expiry = NULL WHERE reset_token = ?');
+        return $req->execute([$newPassword, $token]);
+    } catch (PDOException $error) {
+        throw new UserModelException("Erreur lors de la mise à jour du mot de passe : " . $error->getMessage(), $error->getCode(), $error);
+    }
+}
 ?>
