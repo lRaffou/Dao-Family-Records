@@ -27,11 +27,11 @@ function renderConnexion($message)
                         </form>
                         <form class="toggleForm" id="formRegister" action="" method="post">
                             <input type="email" name="login" class="formControl" placeholder="Email *" required />
-                            <input type="text" name="nom" class="formControl" placeholder="Nom" />
-                            <input type="text" name="prenom" class="formControl" placeholder="Prénom" />
+                            <input type="text" name="nom" class="formControl" placeholder="Nom *" required />
+                            <input type="text" name="prenom" class="formControl" placeholder="Prénom *" required />
                             <input type="text" name="pseudo" class="formControl" placeholder="Pseudo *" required />
                             <input type="text" id="date" onfocus="(this.type='date')" onblur="(this.type='text')"
-                                name="date_de_naissance" class="formControl" placeholder="Date de naissance *" required />
+                                name="date_de_naissance" class="formControl" placeholder="Date de naissance " />
                             <input type="text" name="adresse" class="formControl" placeholder="Adresse" />
                             <input type="text" name="code_postal" class="formControl" placeholder="Code postal" />
                             <input type="text" name="pays" class="formControl" placeholder="Pays" />
