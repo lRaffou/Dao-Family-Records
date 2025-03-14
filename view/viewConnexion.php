@@ -30,8 +30,17 @@ function renderConnexion($message)
                             <input type="text" name="nom" class="formControl" placeholder="Nom *" required />
                             <input type="text" name="prenom" class="formControl" placeholder="Prénom *" required />
                             <input type="text" name="pseudo" class="formControl" placeholder="Pseudo *" required />
-                            <input type="text" id="date" onfocus="(this.type='date')" onblur="(this.type='text')"
-                                name="date_de_naissance" class="formControl" placeholder="Date de naissance " />
+                            <!-- <input type="text" id="date" onfocus="(this.type='date')" onblur="(this.type='text')"
+                                name="date_de_naissance" class="formControl" placeholder="Date de naissance " /> -->
+                            <input type="text" id="date" name="date_de_naissance" class="formControl"
+                                placeholder="Date de naissance" />
+                            <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+                            <script>
+                                flatpickr("#date", {
+                                    dateFormat: "Y-m-d",
+                                    allowInput: true
+                                });
+                            </script>
                             <input type="text" name="adresse" class="formControl" placeholder="Adresse" />
                             <input type="text" name="code_postal" class="formControl" placeholder="Code postal" />
                             <input type="text" name="pays" class="formControl" placeholder="Pays" />
