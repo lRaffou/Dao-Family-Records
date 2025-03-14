@@ -22,7 +22,13 @@ function renderProfil($nom, $prenom, $login, $pseudo, $date_de_naissance, $adres
             <p>Ville : <?php echo $ville ?></p>
             <p>Pays : <?php echo $pays ?></p>
             <p>Téléphone :
-                <?php echo isset($telephone) && !empty($telephone) ? htmlspecialchars($telephone) : 'Non renseigné'; ?>
+                <?php if (isset($telephone) && !empty($telephone)): ?>
+                    <a href="tel:<?php echo htmlspecialchars($telephone); ?>" style="color: #0066cc; text-decoration: none;">
+                        <?php echo htmlspecialchars($telephone); ?>
+                    </a>
+                <?php else: ?>
+                    Non renseigné
+                <?php endif; ?>
             </p>
             <p>Genre : <?php echo $genre ?></p>
             <p>Date de création du compte : <?php echo $date_de_creation_du_compte ?></p>
