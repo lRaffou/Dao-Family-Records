@@ -21,7 +21,9 @@ function renderProfil($nom, $prenom, $login, $pseudo, $date_de_naissance, $adres
             <p>Code postal : <?php echo $postal_code ?></p>
             <p>Ville : <?php echo $ville ?></p>
             <p>Pays : <?php echo $pays ?></p>
-            <p>Téléphone : <?php echo $telephone ?></p>
+            <p>Téléphone :
+                <?php echo isset($telephone) && !empty($telephone) ? htmlspecialchars($telephone) : 'Non renseigné'; ?>
+            </p>
             <p>Genre : <?php echo $genre ?></p>
             <p>Date de création du compte : <?php echo $date_de_creation_du_compte ?></p>
             <a class="formButton" href="/controller/deconnexion.php">Se Déconnecter</a>

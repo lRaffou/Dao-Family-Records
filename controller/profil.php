@@ -43,7 +43,21 @@ function afficherCompte()
     }
 
     //2) Je transmets à la vue les données du compte
-    return ["message" => "", "nom" => $_SESSION['nom'], "prenom" => $_SESSION['prenom'], 'login' => $_SESSION['login'], 'pseudo' => $_SESSION['pseudo'], 'date_de_naissance' => $_SESSION['date_de_naissance'], 'adresse' => $_SESSION['adresse'], 'ville' => $_SESSION['ville'], 'telephone' => $_SESSION['telephone'], 'genre' => $_SESSION['genre'], 'date_de_creation_du_compte' => $_SESSION['date_de_creation_du_compte'], 'postal_code' => $_SESSION['postal_code'], 'pays' => $_SESSION['pays']];
+    return [
+        "message" => "",
+        "nom" => $_SESSION['nom'] ?? '',
+        "prenom" => $_SESSION['prenom'] ?? '',
+        'login' => $_SESSION['login'] ?? '',
+        'pseudo' => $_SESSION['pseudo'] ?? '',
+        'date_de_naissance' => $_SESSION['date_de_naissance'] ?? '',
+        'adresse' => $_SESSION['adresse'] ?? '',
+        'ville' => $_SESSION['ville'] ?? '',
+        'telephone' => isset($_SESSION['telephone']) ? $_SESSION['telephone'] : '',
+        'genre' => $_SESSION['genre'] ?? '',
+        'date_de_creation_du_compte' => $_SESSION['date_de_creation_du_compte'] ?? '',
+        'postal_code' => $_SESSION['postal_code'] ?? '',
+        'pays' => $_SESSION['pays'] ?? ''
+    ];
 }
 
 $message = '';
