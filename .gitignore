@@ -1,2 +1,4 @@
-utils/env.php
+# Fichiers à ignorer
+.DS_Store
+Thumbs.db
 

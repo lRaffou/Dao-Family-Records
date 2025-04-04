@@ -17,7 +17,6 @@ function renderHeader()
             crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="/js/script.js" defer></script>
         <script src="/js/scriptArtist.js" defer></script>
-        <script src="/js/scriptProfil.js" defer></script>
         <title>Dao Family Records</title>
     </head>
 
@@ -54,10 +53,9 @@ function renderHeader()
                                     alt="df" />Vidéos</a>
                         </li>
                         <li>
-                            <a
-                                href="<?php echo isset($_SESSION['isConnected']) && $_SESSION['isConnected'] ? '/controller/profil.php' : '/controller/connexion.php'; ?>">
+                            <a href="/index.php">
                                 <img src="/img/icons8-male-user-48.png" alt="df" />
-                                <?php echo isset($_SESSION['isConnected']) && $_SESSION['isConnected'] ? 'Profil' : 'Connexion'; ?>
+                                Accueil
                             </a>
                         </li>
                     </ul>
@@ -80,8 +78,7 @@ function renderHeader()
                         <p>Dao Family Records</p>
                     </div>
                     <div class="iconCoMin">
-                        <a
-                            href="<?php echo isset($_SESSION['isConnected']) && $_SESSION['isConnected'] ? '/controller/profil.php' : '/controller/connexion.php'; ?>">
+                        <a href="/index.php">
                             <img src="/img/icons8-male-user-48.png" alt="icon de connexion" />
                         </a>
                     </div>

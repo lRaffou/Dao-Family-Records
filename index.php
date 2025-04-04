@@ -1,13 +1,9 @@
 <?php
-session_start();
+// Suppression de session_start() car nous n'avons plus besoin de gérer les sessions
 
-include './utils/env.php';
-include './utils/functions.php';
-include './model/modelUsers.php';
 include './view/viewHeader.php';
 include './view/viewAcceuil.php';
 include './view/viewFooter.php';
-
 
 echo renderHeader();
 echo renderAcceuil();
