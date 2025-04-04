@@ -1250,3 +1250,222 @@ header {
         width: 95%;
     }
 }
+
+/* Styles pour la page Événements */
+.mainEvent {
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.eventHero {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.eventHero h1 {
+    font-family: "Montserrat-Bold";
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.eventHero p {
+    font-size: 1.2rem;
+    color: #ccc;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.featuredEvent {
+    margin-bottom: 4rem;
+}
+
+.featuredEvent h2 {
+    font-family: "Montserrat-Bold";
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.eventContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.eventCard {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.eventCard.featured {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.eventImage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    overflow: hidden;
+}
+
+.eventImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.eventCard:hover .eventImage img {
+    transform: scale(1.05);
+}
+
+.eventDate {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(255, 85, 0, 0.9);
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.eventDate .day {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.eventDate .month {
+    display: block;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.eventInfo {
+    padding: 1.5rem;
+}
+
+.eventInfo h3 {
+    font-family: "Montserrat-Bold";
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.eventTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.tag {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.eventDescription {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.eventDetails {
+    color: #ccc;
+    margin-bottom: 1.5rem;
+}
+
+.eventActions {
+    display: flex;
+    gap: 1rem;
+}
+
+.btnEvent {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btnEvent:not(.btnPrimary) {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.btnEvent.btnPrimary {
+    background-color: #ff5500;
+    color: white;
+}
+
+.btnEvent:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pastEvents h2 {
+    font-family: "Montserrat-Bold";
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.eventGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.eventGrid .eventCard {
+    display: flex;
+    flex-direction: column;
+}
+
+.eventGrid .eventImage {
+    height: 200px;
+}
+
+/* Media Queries pour la page Événements */
+@media (max-width: 1000px) {
+    .eventCard.featured {
+        grid-template-columns: 1fr;
+    }
+
+    .eventHero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .mainEvent {
+        padding: 1rem;
+    }
+
+    .eventHero h1 {
+        font-size: 2rem;
+    }
+
+    .eventGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .eventActions {
+        flex-direction: column;
+    }
+
+    .btnEvent {
+        text-align: center;
+    }
+}
