@@ -23,43 +23,55 @@ function renderHeader()
     <body>
         <header>
             <nav class="navMax1000">
-                <section class="navTop">
-                    <article class="connexionNavTop">
-                        <!-- <a href="/index.php"><img class="connexionImg" src="/img/icons8-male-user-96.png"
-                        alt="Connexion DFR" /></a>dgtersdg -->
-                    </article>
-                    <article class="logoNav">
-                        <a href="/index.php"><img class="logoImg" src="/img/1logo_simple_dfr_blanc.png"
-                                alt="Logo DFR" /></a>
-                    </article>
-                    <article class="nameDfrNav">
+                <div class="navTop">
+                    <div class="logoNav">
+                        <a href="/index.php">
+                            <img class="logoImg" src="/img/1logo_simple_dfr_blanc.png" alt="Logo DFR" />
+                        </a>
+                    </div>
+                    <div class="nameDfrNav">
                         <p>Dao Family Records</p>
-                    </article>
-                </section>
-                <section class="menuNav">
+                    </div>
+                    <div class="connexionNavTop">
+                        <a href="/index.php">
+                            <img class="connexionImg" src="/img/icons8-male-user-96.png" alt="Connexion DFR" />
+                        </a>
+                    </div>
+                </div>
+                <div class="menuNav">
                     <ul>
                         <li>
-                            <a href="/index.php"><img src="/img/icons8-accueil-48.png" alt="df" />Accueil</a>
+                            <a href="/index.php">
+                                <img src="/img/icons8-accueil-48.png" alt="Accueil" />
+                                <span>Accueil</span>
+                            </a>
                         </li>
                         <li>
-                            <a href="/controller/evenement.php"><img src="/img/icons8-two-tickets-50.png"
-                                    alt="df" />Events</a>
+                            <a href="/controller/evenement.php">
+                                <img src="/img/icons8-two-tickets-50.png" alt="Événements" />
+                                <span>Événements</span>
+                            </a>
                         </li>
                         <li>
-                            <a href="/controller/artiste.php"><img src="/img/icons8-artiste-48.png" alt="df" />Artistes</a>
+                            <a href="/controller/artiste.php">
+                                <img src="/img/icons8-artiste-48.png" alt="Artistes" />
+                                <span>Artistes</span>
+                            </a>
                         </li>
                         <li>
-                            <a href="/controller/video.php"><img src="/img/icons8-lecture-de-youtube-48.png"
-                                    alt="df" />Vidéos</a>
+                            <a href="/controller/video.php">
+                                <img src="/img/icons8-lecture-de-youtube-48.png" alt="Vidéos" />
+                                <span>Vidéos</span>
+                            </a>
                         </li>
                         <li>
                             <a href="/controller/album.php">
-                                <img src="/img/icons8-album-48.png" alt="df" />
-                                Albums
+                                <img src="/img/icons8-album-48.png" alt="Albums" />
+                                <span>Albums</span>
                             </a>
                         </li>
                     </ul>
-                </section>
+                </div>
             </nav>
             <nav class="navMin1000">
                 <div class="menuNavMin">
