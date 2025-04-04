@@ -53,9 +53,9 @@ function renderHeader()
                                     alt="df" />Vidéos</a>
                         </li>
                         <li>
-                            <a href="/index.php">
-                                <img src="/img/icons8-male-user-48.png" alt="df" />
-                                Accueil
+                            <a href="/controller/album.php">
+                                <img src="/img/icons8-music-48.png" alt="df" />
+                                Albums
                             </a>
                         </li>
                     </ul>
@@ -68,6 +68,7 @@ function renderHeader()
                         <li><a href="/controller/evenement.php">Evènements</a></li>
                         <li><a href="/controller/artiste.php">Artistes</a></li>
                         <li><a href="/controller/video.php">Vidéos</a></li>
+                        <li><a href="/controller/album.php">Albums</a></li>
                     </ul>
                 </div>
                 <div class="divLogoNavMin">
