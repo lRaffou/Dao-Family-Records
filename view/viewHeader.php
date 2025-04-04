@@ -62,26 +62,29 @@ function renderHeader()
                 </section>
             </nav>
             <nav class="navMin1000">
-                <div class="menuNavMin">
-                    <ul>
-                        <li><a href="/index.php">Accueil</a></li>
-                        <li><a href="/controller/evenement.php">Evènements</a></li>
-                        <li><a href="/controller/artiste.php">Artistes</a></li>
-                        <li><a href="/controller/video.php">Vidéos</a></li>
-                        <li><a href="/controller/album.php">Albums</a></li>
-                    </ul>
-                </div>
-                <div class="divLogoNavMin">
-                    <a href="/index.php"><img class="logoNavMin" src="/img/1logo_simple_dfr_blanc.png" alt="Logo DFR" /></a>
-                </div>
-                <div class="nameNavMin">
-                    <div class="nameDfrNavMin">
-                        <p>Dao Family Records</p>
-                    </div>
-                    <div class="iconCoMin">
+                <div class="navbarContainer">
+                    <div class="navbarLogo">
                         <a href="/index.php">
-                            <img src="/img/icons8-male-user-48.png" alt="icon de connexion" />
+                            <img class="logoNavMin" src="/img/1logo_simple_dfr_blanc.png" alt="Logo DFR" />
+                            <span>Dao Family Records</span>
                         </a>
+                    </div>
+                    <div class="navbarMenu">
+                        <ul>
+                            <li><a href="/index.php" class="navLink"><i class="fas fa-home"></i> Accueil</a></li>
+                            <li><a href="/controller/evenement.php" class="navLink"><i class="fas fa-calendar-alt"></i>
+                                    Événements</a></li>
+                            <li><a href="/controller/artiste.php" class="navLink"><i class="fas fa-music"></i> Artistes</a>
+                            </li>
+                            <li><a href="/controller/video.php" class="navLink"><i class="fas fa-video"></i> Vidéos</a></li>
+                            <li><a href="/controller/album.php" class="navLink"><i class="fas fa-compact-disc"></i>
+                                    Albums</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbarSocial">
+                        <a href="#" class="socialLink"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="socialLink"><i class="fab fa-spotify"></i></a>
+                        <a href="#" class="socialLink"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </nav>

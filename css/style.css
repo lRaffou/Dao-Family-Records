@@ -609,60 +609,97 @@ header {
     header {
         z-index: 100;
         height: 7vh;
-        /* font-family: "Montserrat-Regular"; */
         position: sticky;
         top: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
     .navMin1000 {
         display: flex;
         height: 100%;
+        padding: 0 2rem;
     }
-    .menuNavMin {
-        /* background-color: #b7b7b7; */
+    .navbarContainer {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 49%;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
     }
-    .menuNavMin ul {
-        display: flex;
-        justify-content: space-evenly;
-        list-style: none;
-    }
-    .menuNavMin ul li a {
-        text-decoration: none;
-        font-size: 1.5vw;
-        color: #fff;
-    }
-    .divLogoNavMin {
-        display: flex;
-        justify-content: center;
-        width: 2%;
-    }
-    .logoNavMin {
-        scale: 2;
-        padding-top: 1em;
-        height: 2.6vw;
-    }
-    .nameNavMin {
-        /* background-color: #b7b7b7; */
+    .navbarLogo {
         display: flex;
         align-items: center;
-        width: 49%;
     }
-    .nameDfrNavMin {
+    .navbarLogo a {
         display: flex;
-        justify-content: center;
-        width: 90%;
+        align-items: center;
+        text-decoration: none;
+        color: #fff;
+    }
+    .navbarLogo img {
+        height: 5vh;
+        margin-right: 1rem;
+    }
+    .navbarLogo span {
         font-family: "Montserrat-Bold";
+        font-size: 1.2rem;
         text-transform: uppercase;
-        font-size: 2vw;
+        letter-spacing: 1px;
     }
-    .iconCoMin {
+    .navbarMenu {
         display: flex;
+        align-items: center;
     }
-    .iconCoMin img {
-        width: 2vw;
+    .navbarMenu ul {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+        margin: 0;
+        padding: 0;
+    }
+    .navLink {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        padding: 0.5rem 0;
+        position: relative;
+    }
+    .navLink i {
+        margin-right: 0.5rem;
+    }
+    .navLink:hover {
+        color: #ff0000;
+    }
+    .navLink::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #ff0000;
+        transition: width 0.3s ease;
+    }
+    .navLink:hover::after {
+        width: 100%;
+    }
+    .navbarSocial {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .socialLink {
+        color: #fff;
+        font-size: 1.2rem;
+        transition: all 0.3s ease;
+    }
+    .socialLink:hover {
+        color: #ff0000;
+        transform: translateY(-3px);
     }
     main {
         margin: 0;
