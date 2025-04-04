@@ -26,7 +26,7 @@ function renderHeader()
                 <section class="navTop">
                     <article class="connexionNavTop">
                         <!-- <a href="/index.php"><img class="connexionImg" src="/img/icons8-male-user-96.png"
-                        alt="Connexion DFR" /></a> -->
+                        alt="Connexion DFR" /></a>dgtersdg -->
                     </article>
                     <article class="logoNav">
                         <a href="/index.php"><img class="logoImg" src="/img/1logo_simple_dfr_blanc.png"
