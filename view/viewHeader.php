@@ -54,7 +54,7 @@ function renderHeader()
                         </li>
                         <li>
                             <a href="/controller/album.php">
-                                <img src="/img/icons8-music-48.png" alt="df" />
+                                <img src="/img/icons8-album-48.png" alt="df" />
                                 Albums
                             </a>
                         </li>
