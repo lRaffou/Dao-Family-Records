@@ -13,7 +13,7 @@
 }
 
 body {
-    background-color: #000000;
+    background-color: #f8f7f7;
     color: #fff;
     /* display: flex; */
     /* flex-direction: column; */
@@ -1761,6 +1761,7 @@ header {
     font-weight: bold;
     margin: 0;
     background: linear-gradient(45deg, #ff0000, #ff6b6b);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
