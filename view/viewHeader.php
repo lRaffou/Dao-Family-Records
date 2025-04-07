@@ -39,23 +39,33 @@ function renderHeader()
                 <section class="menuNav">
                     <ul>
                         <li>
-                            <a href="/index.php"><img src="/img/icons8-accueil-48.png" alt="df" />Accueil</a>
+                            <a href="/index.php"
+                                class="<?php echo ($_SERVER['PHP_SELF'] == '/index.php') ? 'active' : ''; ?>">
+                                <i class="fas fa-home"></i><span>Accueil</span>
+                            </a>
                         </li>
                         <li>
-                            <a href="/controller/evenement.php"><img src="/img/icons8-two-tickets-50.png"
-                                    alt="df" />Events</a>
+                            <a href="/controller/evenement.php"
+                                class="<?php echo ($_SERVER['PHP_SELF'] == '/controller/evenement.php') ? 'active' : ''; ?>">
+                                <i class="fas fa-calendar-alt"></i><span>Events</span>
+                            </a>
                         </li>
                         <li>
-                            <a href="/controller/artiste.php"><img src="/img/icons8-artiste-48.png" alt="df" />Artistes</a>
+                            <a href="/controller/artiste.php"
+                                class="<?php echo ($_SERVER['PHP_SELF'] == '/controller/artiste.php') ? 'active' : ''; ?>">
+                                <i class="fas fa-music"></i><span>Artistes</span>
+                            </a>
                         </li>
                         <li>
-                            <a href="/controller/video.php"><img src="/img/icons8-lecture-de-youtube-48.png"
-                                    alt="df" />Vidéos</a>
+                            <a href="/controller/video.php"
+                                class="<?php echo ($_SERVER['PHP_SELF'] == '/controller/video.php') ? 'active' : ''; ?>">
+                                <i class="fas fa-video"></i><span>Vidéos</span>
+                            </a>
                         </li>
                         <li>
-                            <a href="/controller/album.php">
-                                <img src="/img/icons8-album-48.png" alt="df" />
-                                Albums
+                            <a href="/controller/album.php"
+                                class="<?php echo ($_SERVER['PHP_SELF'] == '/controller/album.php') ? 'active' : ''; ?>">
+                                <i class="fas fa-compact-disc"></i><span>Albums</span>
                             </a>
                         </li>
                     </ul>
